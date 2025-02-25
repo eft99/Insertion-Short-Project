@@ -1,0 +1,20 @@
+Proje süresince literatür taraması üzerine gidilerek temel mantıklar anlaşılmaya çalışılmıştır.
+Veri dosyasının hem llm modelleri hem de görsel barındırıyor oluşundan dolayı json seçilmiştir.
+Proje json çıktısı verip yerel API bağlantısı vermektedir fakat Not Found hatası almaktadır.
+Proje sonucunda araştırmalar devam etmektedir.
+Projenin başlangıcında tarafımızca detay bilgi istenmemiştir. Tek bir şeye odaklanmak yerine genel öğrenme süreci tercih edilmiştir.
+Projenin model tercihi biraz eksik yapılmıştır. Araştırmalar sürmeye devam etmektedir.
+CLIP modelinin seçilmesi fotoğraf barınması ve ileriki chatbot hamleleri için iyi bir temel getireceği düşünülmüştür.
+Modelin hızlandırılması için Llama, LoRa ve Unslouth kullanılması şiddetle tavsiye edilir.
+Hafıza problemi yaşanmaması isteğiyle proje Google Colab kullanılarak yapılmaya çalışılmıştır.
+Proje lokalde de çalıştırılmıştır fakat Colab'de daha hızlı çalışmaktadır.
+Hali hazırda tarafımca süreç araştırma serüveninin devamı şeklinde yürütülmektedir.
+https://www.deeplearningbook.org/ ve https://web.stanford.edu/~jurafsky/slp3/ adresleri araştırma sırasına eklenmiştir.
+Araştırma sürecinin genel görüntüsü çizilmesi gerekirse yukarıda bahsolunan siteler, youtube üzerinden araştırmalar, pytorch,scikitlearn, SpaCy, TensorFlow, Cuda, Llama, LangChain devam etmektedir.
+https://arxiv.org/pdf/2305.14314 https://arxiv.org/pdf/2209.05433 https://arxiv.org/pdf/1706.03762 https://arxiv.org/pdf/2208.07339 bu da diğer incelenmesi planlanan dokümanlardır.
+Bu süreçte tarafımca ne yazık ki istenen çıktıya ulaşılamamıştır. Araştırma süreci planlanandan daha uzun sürmüştür. Bu sürecin uzamasının sebebi hem sektörel hem de kişisel meraktandır.
+Bu projenin sonunda konuyla alakalı vizyon elde edilmiştir. Tarafımızca daha net bir süreç planlamasına gidilmesi gerekliliği tespit edilmiştir.
+Chatbot kurma kısmının araştırmaları eksik kalmıştır. API problemi sebebiyle sürece geçilememiştir.
+Yapılan araştırmalar sonucunda performansın optimize edilmesi için bit miktarı az tutulmuştur. Veri seti küçük olduğu için küçük bir model, küçük eğitim adımları,
+overfitting engellemek adına ideal tekrar miktarı, step- loss dengesinin belirlenip ona göre adım ayarların tespit edilmesi gibi yapılar tercih edilerek hızlı ve eğitim kaybının ideal
+seviyede tutulması hedeflenmiştir. Eğitim kaybının çok düşürülmesi overfitting durumuna düşülmesi demek olacağı için 0.8-1.5 aralığı 500-1000 step arasında ideal kabul edilmiştir.
